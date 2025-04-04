@@ -2,10 +2,7 @@
   "name": "daiku",
   "version": "0.0.1",
   "description": "Custom utilities used for building and packaging TypeScript projects as NPM libraries.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shunueda/daiku.git"
-  },
+  "repository": "shunueda/daiku",
   "license": "MIT",
   "type": "module",
   "bin": "src/index.ts",
