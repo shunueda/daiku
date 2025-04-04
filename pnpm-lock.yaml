@@ -30,9 +30,6 @@ importers:
       cz-conventional-changelog:
         specifier: ^3.3.0
         version: 3.3.0(@types/node@22.14.0)(typescript@5.8.2)
-      daiku:
-        specifier: workspace:*
-        version: 'link:'
       sort-package-json:
         specifier: ^3.0.0
         version: 3.0.0
