@@ -13,4 +13,4 @@ jobs:
           fetch-depth: 0
       - uses: ./.github/actions/setup
       - run: pnpm build
-      - run: pkg-pr-new publish --pnpm --compact
+      - run: pnpm pkg-pr-new publish --pnpm --compact
