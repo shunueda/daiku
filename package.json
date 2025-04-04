@@ -4,7 +4,7 @@
   "description": "Custom utilities used for building and packaging TypeScript projects as NPM libraries.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shunueda/daiku.git"
+    "url": "git+https://github.com/shunueda/daiku.git"
   },
   "license": "MIT",
   "type": "module",

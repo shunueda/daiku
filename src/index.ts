@@ -22,7 +22,7 @@ const readmeFile = 'README.md'
 const tsconfig = await readTSConfig()
 const packageJson = await readPackageJSON()
 const readmeMd = join(cwd(), readmeFile)
-const entries = await Array.fromAsync(glob(`**/${indexFile}`))
+const entries = await Array.fromAsync(glob(join(srcDir, '**', indexFile)))
 
 await build({
   entry: entries,
