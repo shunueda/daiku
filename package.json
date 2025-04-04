@@ -29,6 +29,7 @@
     "@types/node": "^22.14.0",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
+    "pkg-pr-new": "^0.0.42",
     "sort-package-json": "^3.0.0",
     "typescript": "^5.8.2"
   },
