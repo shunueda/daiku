@@ -7,9 +7,12 @@
   "bin": "src/index.ts",
   "scripts": {
     "build": "pnpm start",
+    "changeset": "changeset && pnpm changeset:version",
+    "changeset:version": "changeset version",
     "check": "biome check --write && sort-package-json --quiet",
     "precommit": "pnpm check & pnpm type-check",
     "commit": "git add --all && cz",
+    "release": "changeset publish",
     "release:snapshot": "pkg-pr-new publish --pnpm --compact",
     "start": "tsx src/index.ts",
     "type-check": "tsc"
@@ -26,6 +29,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@changesets/cli": "^2.28.1",
+    "@changesets/config": "^3.1.1",
     "@types/node": "^22.14.0",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
