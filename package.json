@@ -7,12 +7,12 @@
   "bin": "src/index.ts",
   "scripts": {
     "build": "pnpm start",
-    "changeset": "changeset && pnpm changeset:version",
+    "changeset": "changeset",
+    "changeset:publish": "changeset publish",
     "changeset:version": "changeset version",
     "check": "biome check --write && sort-package-json --quiet",
     "precommit": "pnpm check & pnpm type-check",
     "commit": "git add --all && cz",
-    "release": "changeset publish",
     "release:snapshot": "pkg-pr-new publish --pnpm --compact",
     "start": "tsx src/index.ts",
     "type-check": "tsc"
