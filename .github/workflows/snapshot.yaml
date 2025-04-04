@@ -1,0 +1,16 @@
+name: Snapshot
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  release-snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/setup
+      - run: pnpm build
+      - run: pnpm release:snapshot

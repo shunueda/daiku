@@ -1,0 +1,41 @@
+{
+  "name": "daiku",
+  "version": "0.1.0",
+  "description": "Custom utilities used for building and packaging TypeScript projects as NPM libraries.",
+  "license": "MIT",
+  "type": "module",
+  "bin": "src/index.ts",
+  "scripts": {
+    "check": "biome check --write && sort-package-json --quiet",
+    "precommit": "pnpm check & pnpm type-check",
+    "commit": "git add --all && cz",
+    "release:snapshot": "pkg-pr-new publish --pnpm --compact",
+    "start": "tsx src/index.ts",
+    "type-check": "tsc"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "pkg-types": "^2.1.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.14.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "sort-package-json": "^3.0.0",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@10.6.3",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "esbuild"
+    ]
+  }
+}
