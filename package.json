@@ -6,6 +6,7 @@
   "type": "module",
   "bin": "src/index.ts",
   "scripts": {
+    "build": "pnpm start",
     "check": "biome check --write && sort-package-json --quiet",
     "precommit": "pnpm check & pnpm type-check",
     "commit": "git add --all && cz",
@@ -32,6 +33,11 @@
     "typescript": "^5.8.2"
   },
   "packageManager": "pnpm@10.6.3",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist",
+    "provenance": true
+  },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@biomejs/biome",
