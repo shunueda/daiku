@@ -48,6 +48,7 @@ const modified: PackageJson = {
     'description',
     'license',
     'type',
+    'bin',
     'repository',
     'dependencies',
     'keywords'

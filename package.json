@@ -5,7 +5,7 @@
   "repository": "shunueda/daiku",
   "license": "MIT",
   "type": "module",
-  "bin": "src/index.ts",
+  "bin": "index.js",
   "scripts": {
     "build": "pnpm start",
     "check": "biome check --write && sort-package-json --quiet",
