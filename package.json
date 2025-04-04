@@ -1,6 +1,6 @@
 {
   "name": "daiku",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Custom utilities used for building and packaging TypeScript projects as NPM libraries.",
   "license": "MIT",
   "type": "module",
