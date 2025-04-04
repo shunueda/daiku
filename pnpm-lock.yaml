@@ -14,6 +14,9 @@ importers:
       tsup:
         specifier: ^8.4.0
         version: 8.4.0(jiti@2.4.2)(tsx@4.19.3)(typescript@5.8.2)
+      tsx:
+        specifier: ^4.19.3
+        version: 4.19.3
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.4
@@ -2553,7 +2556,6 @@ snapshots:
   get-tsconfig@4.10.0:
     dependencies:
       resolve-pkg-maps: 1.0.0
-    optional: true
 
   git-hooks-list@3.2.0: {}
 
@@ -2990,8 +2992,7 @@ snapshots:
 
   resolve-from@5.0.0: {}
 
-  resolve-pkg-maps@1.0.0:
-    optional: true
+  resolve-pkg-maps@1.0.0: {}
 
   restore-cursor@3.1.0:
     dependencies:
@@ -3199,7 +3200,6 @@ snapshots:
       get-tsconfig: 4.10.0
     optionalDependencies:
       fsevents: 2.3.3
-    optional: true
 
   type-detect@4.1.0: {}
 

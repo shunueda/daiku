@@ -2,11 +2,11 @@
   "name": "daiku",
   "version": "0.0.1",
   "description": "Custom utilities used for building and packaging TypeScript projects as NPM libraries.",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/shunueda/daiku.git"
   },
+  "license": "MIT",
   "type": "module",
   "bin": "src/index.ts",
   "scripts": {
@@ -24,7 +24,8 @@
   },
   "dependencies": {
     "pkg-types": "^2.1.0",
-    "tsup": "^8.4.0"
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
@@ -47,6 +48,9 @@
     "provenance": true
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["@biomejs/biome", "esbuild"]
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "esbuild"
+    ]
   }
 }
