@@ -33,6 +33,9 @@
     "typescript": "^5.8.2"
   },
   "packageManager": "pnpm@10.6.3",
+  "engines": {
+    "node": "23"
+  },
   "publishConfig": {
     "access": "public",
     "directory": "dist",
