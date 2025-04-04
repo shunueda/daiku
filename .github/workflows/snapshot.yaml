@@ -5,7 +5,7 @@ on:
   - pull_request
 
 jobs:
-  release-snapshot:
+  publish-snapshot:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -13,4 +13,4 @@ jobs:
           fetch-depth: 0
       - uses: ./.github/actions/setup
       - run: pnpm build
-      - run: pnpm release:snapshot
+      - run: pkg-pr-new publish --pnpm --compact
